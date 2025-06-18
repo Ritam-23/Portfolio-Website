@@ -1,0 +1,151 @@
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Audiowide', sans-serif;
+  left:6rem;
+}
+
+button {
+  font-size: 1em;
+  padding: 0.4em 0.6em;
+  border-radius: 0.4em;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #000000b4;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.container {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  z-index: 0;
+  border-radius: 0.6em;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.6em;
+  z-index: -10;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+
+.container:hover::before {
+  filter: blur(0.6em);
+}
+
+h1{
+  color: #fff;
+}
+
+.profile {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url('../../pic.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5px #fff, 0 0 10px #9e4fff, 0 0 15px #9e4fff;
+  animation: sparkle 1.5s infinite alternate;
+}
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #9e4fff, 0 0 15px #9e4fff;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #bf5fff, 0 0 30px #bf5fff;
+  }
+}
+
+.name{
+  font-family: 'ephesis', cursive;
+  font-size: xxx-large;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ephesis-regular {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.typewriter{
+  color:#fff;
+  font-weight: 700;
+  font-family:   'Audiowide', sans-serif;
+  
+  
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.typewriting h1 {
+  border-right: #fff 0.15em solid;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.skills-container{
+  font-family: 'Audiowide', sans-serif;
+}
+
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.waving-hand {
+  animation: wave 1.8s infinite;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+.contact{
+  font-family: 'Audiowide', sans-serif;
+  color: #fff;
+  
+}
+
+.hover-active {
+  @apply transform transition duration-300 hover:scale-105 active:scale-105;
+}
+/* Add this to your CSS if you're not using a custom class setup */
+.nav-btn {
+  @apply text-white bg-black px-4 py-2 rounded text-sm sm:text-base transition duration-300;
+}
+
