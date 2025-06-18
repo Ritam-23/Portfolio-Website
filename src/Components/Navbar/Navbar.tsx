@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { Sling as Hamburger } from 'hamburger-react'
-import Ballpit from "../Background/Ballpit";
+
 import ProfileCard from "../../ProfileCard";
 import pic from "../../pic.jpg";
 import "./Navbar.css";

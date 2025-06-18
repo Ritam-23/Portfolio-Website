@@ -1,30 +1,9 @@
-
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styled from 'styled-components';
-
 const Loader = () => {
-  return (
-    <StyledWrapper>
-      <div className="hacker-loader">
-        <div className="loader-text">
-          <span data-text="Initializing..." className="text-glitch">Initializing...</span>
-        </div>
-        <div className="loader-bar">
-          <div className="bar-fill" />
-          <div className="bar-glitch" />
-        </div>
-        <div className="particles">
-          <div className="particle" />
-          <div className="particle" />
-          <div className="particle" />
-          <div className="particle" />
-          <div className="particle" />
-        </div>
-      </div>
-    </StyledWrapper>
-  );
+    return (_jsx(StyledWrapper, { children: _jsxs("div", { className: "hacker-loader", children: [_jsx("div", { className: "loader-text", children: _jsx("span", { "data-text": "Initializing...", className: "text-glitch", children: "Initializing..." }) }), _jsxs("div", { className: "loader-bar", children: [_jsx("div", { className: "bar-fill" }), _jsx("div", { className: "bar-glitch" })] }), _jsxs("div", { className: "particles", children: [_jsx("div", { className: "particle" }), _jsx("div", { className: "particle" }), _jsx("div", { className: "particle" }), _jsx("div", { className: "particle" }), _jsx("div", { className: "particle" })] })] }) }));
 };
-
-const StyledWrapper = styled.div`
+const StyledWrapper = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,5 +186,4 @@ const StyledWrapper = styled.div`
     }
   }
 `;
-
 export default Loader;
