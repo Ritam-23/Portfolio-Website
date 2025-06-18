@@ -37,7 +37,7 @@ import graphql from "../icons/GraphQL.svg";
 import typescript from "../icons/typescript.png";
 import socket from "../icons/Socket.io.svg";
 import docker from "../icons/Docker.svg";
-import nginx from "../icons/Nginx.svg";
+
 import python from "../icons/python.png";
 import cpp from "../icons/cpp.png";
 
@@ -296,7 +296,7 @@ const Navbar: React.FC = () => {
 
           {[
             html, css, js, typescript, node,
-            react, express, next, socket, nginx,
+            react, express, next, socket,
             tailwind, bootstrap, mongodbAtlas, sql, postgre,
             fast, postman, graphql, docker
           ].map((icon, idx) => (
