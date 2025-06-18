@@ -30,7 +30,7 @@ import graphql from "../icons/GraphQL.svg";
 import typescript from "../icons/typescript.png";
 import socket from "../icons/Socket.io.svg";
 import docker from "../icons/Docker.svg";
-import nginx from "../icons/Nginx.svg";
+import nginx from "../icons/NGINX.svg";
 import python from "../icons/python.png";
 import cpp from "../icons/cpp.png";
 import clang from "../icons/c.svg";
